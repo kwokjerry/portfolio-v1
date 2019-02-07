@@ -1,0 +1,275 @@
+/* Reset... */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    overflow-x:hidden;
+}
+
+
+/*========================================
+  ============ BARRE NAVIGATION ==========
+  =======================================*/
+
+.menu {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    transition: 0.4s;
+    padding: 1.3em;
+    text-align: center;
+    z-index: 10;
+}
+
+.menu a {
+    text-align: center;
+    padding: 0em 3em;
+    text-decoration: none;
+    font-size: 1.3rem; 
+}
+
+.btn_menu{
+    display: none;
+}
+
+.btn_menu_mobile{
+    height: 100vh;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(.42, 0, .49, 1.43);
+}
+
+.btn_menu_mobile a{
+    text-align: center;
+    padding: 2em 0em;
+    text-decoration: none;
+    font-size: 1.3rem; 
+}
+
+.logo_main{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    height: 70px;
+    transition: 0.4s;
+}
+
+#chkBoutonBurger {
+    display: none;
+}
+
+.boutonBurger {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 6%;
+    float: right;
+}
+
+.ligne {
+    border-radius: 50%;
+    width: 100%;
+    height: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/*==============ANIMATIONS MENU BURGER==========*/
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:first-child {
+    transform: translateY(15px) rotate(45deg);
+}
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:nth-child(2) {
+    opacity: 0;
+}
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:last-child {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+
+/*========================================
+  ============ FOND VIDEOS ==============
+  =======================================*/
+
+.v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.container-all{
+    padding-left:auto;
+    padding-right:auto;
+    margin:auto;
+    text-align:center;
+}
+
+.container{
+    max-width:750px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align:center;
+}
+
+.video-background{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.video-background video{
+    min-height:100%;
+    min-width:100%;
+}
+
+.header-content-container{
+    z-index: 1;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content h1{
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content p{
+    font-size:1.5em;
+}
+
+.bar-entre{
+    margin: 10px 0;
+    height: 2px;
+}
+
+.section{
+  padding:20px 0;
+}
+
+.section-a{
+    height: 91vh;
+}
+
+.section-b{
+    height: 91vh;
+}
+
+.desc{
+    padding: 3em;
+}
+
+/*==================================
+  ============ FOOTER ==============
+  ==================================*/
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0em;
+}
+
+.footerbox{
+    text-align: center;
+    border: 1px solid black;
+    margin: 2.5em;
+    width: 17em;
+}
+
+.bar-entre-footer{
+    margin: 10px 0;
+    width: 1px;
+    border: 1px solid black;
+}
+
+/* Styles pour les tablettes*/
+@media screen and (min-width: 768px) {
+
+.boutonBurger {
+    margin: 2%;
+}
+
+}
+
+
+
+/* Styles pour les écrans plus larges*/
+@media screen and (min-width: 1200px) {
+
+.menu {
+    flex: 0 0 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu a {
+    transform: translateX(0%);
+    flex: 1 0 auto;
+}
+
+.btn_menu{
+    padding: 1.2em;
+    display: block;
+}
+
+.btn_menu_mobile{
+    display: none;
+}
+
+.boutonBurger {
+    display: none;
+}
+
+/*===========Fond video===========*/
+
+.desc{
+    padding: 3em;
+}
+
+.container{
+    max-width:1500px;
+    padding-left:0.1em;
+    padding-right:0.1em;
+    margin:auto;
+    text-align:center;
+}
+
+}

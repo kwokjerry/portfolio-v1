@@ -1,0 +1,66 @@
+body{
+    color:#333;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #4f4b4b;
+}
+
+.menu a {
+    color: #f2f2f2; 
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    color: #e34234; 
+    transition: 0.5s;
+}
+
+.btn_menu_mobile{
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 1px solid #4f4b4b;
+}
+
+.btn_menu_mobile a{
+    color: #f2f2f2;
+    border: 1px solid #4f4b4b; 
+}
+
+
+.ligne {
+    background-color: #e34234;
+}
+
+
+/*========================================
+  ============ FOND VIDEOS ==============
+  =======================================*/
+.v-header{
+    color:#fff;
+}
+
+.bar-entre{
+    background-color: white;
+}
+
+.section-b{
+    background:#333;
+    color:#fff;
+}
+
+.desc{
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4f4b4b;
+}
+
+
+/* Styles pour les écrans plus larges*/
+@media screen and (min-width: 1200px) {
+
+.desc{
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4f4b4b;
+}
+
+}
