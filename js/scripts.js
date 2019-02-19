@@ -22,7 +22,7 @@ function scrollFunction() {
     menu.style.padding = "0em";
     logo.style.height = "55px";
   } else {
-    menu.style.padding = "1.2em";
+    menu.style.padding = "1em";
     logo.style.height = "70px";
   }
 }
