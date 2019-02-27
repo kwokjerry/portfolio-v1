@@ -15,8 +15,8 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/koro_sensei.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
 	<title>Jerry Kwok Hiu Fung</title>
 
 </head>
@@ -30,11 +30,11 @@
 
 		<span class="btn_menu">
 			<a href="#"><i class="fas fa-home"></i></a>
-			<span class="separateur"></span>
+			<span class="separateurMenu"></span>
 			<a href="#jeux">JEUX</a>
-			<span class="separateur"></span>
+			<span class="separateurMenu"></span>
 			<a href="#3d">3D</a>
-			<span class="separateur"></span>
+			<span class="separateurMenu"></span>
 			<a href="#web">WEB</a>
 		</span>
 
@@ -72,15 +72,16 @@
 			</div>
 		</div>
 
-		<section class="section">
-			<div class="container section-a">
+		<section class="section" id="intro">
+			<div class="containerIntro section-a">
 				<div class="intro-section-a">
 					<div class="a-intro a-intro-un">
-						<h2 class="a-intro-titre">Section A</h2>
+						<h2 class="a-intro-titre">Qui suis-je?</h2>
 						<p class="a-intro-texte">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima</p>		
 					</div>
 					<div class="a-intro a-intro-deux">
-						<iframe src="https://www.youtube.com/embed/4d5TjzhUiXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<video width="400" controls id="videoTrailer"><source src="videos/demo.mp4" type="video/mp4"></video>
+						<!--<iframe id='ytTrailer' src="https://www.youtube.com/embed/4d5TjzhUiXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 					</div>
 				</div>
 
@@ -92,26 +93,83 @@
 			</div>
 		</section>
 
-		<section class="section" id="jeux">
-			<div class="container section-b">
-				<h2 class="a-intro-titre">Section B</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
-			</div>
-		</section>
 
-		<section class="section" id="3d">
-			<div class="container section-b">
-				<h2 class="a-intro-titre">Section B</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
-				<div class="sketchfab-embed-wrapper">
-					<iframe width="720" height="auto" src="https://sketchfab.com/models/541501230e4544468704851384d54e0f/embed?autospin=0.2" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		<section class="section" id="jeux">
+			<div class="section-titre-separateur">
+				<div class="titre-separateur">
+					<h2 class="titre-texte">Jeux</h2>
+				</div>
+			</div>
+			<div class="containerJeux containerJeux-1">
+				<div class="containerJeux-section containerJeux-sec-gauche">
+					<div class="texte-section texte-gauche">
+						<h2 class="a-intro-titre">Mes création de jeux</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+					</div>
+				</div>
+			</div>
+			<div class="containerJeux containerJeux-2">
+				<div class="containerJeux-section containerJeux-sec-droite">
+					<div class="texte-section texte-droite">
+						<h2 class="a-intro-titre">Zero</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+					</div>
+				</div>
+			</div>
+			<div class="containerJeux containerJeux-3">
+				<div class="containerJeux-section containerJeux-sec-gauche">
+					<div class="texte-section texte-gauche">
+						<h2 class="a-intro-titre">Mission:F</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
+		<section class="section" id="3d">
+			<div class="section-titre-separateur">
+				<div class="titre-separateur">
+					<h2 class="titre-texte">3D / Animation</h2>
+				</div>
+			</div>
+			<div class="container3D container3D-container-1">
+				<div class="container3D-container">
+					<h2 class="c3D-titre">Samurai Voxel</h2>
+					<p class="c3D-texte">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima</p>		
+				</div>
+				<div class="container3D-container">
+					<div class="sketchfab-embed-wrapper">
+						<iframe id="sketchfab1" src="https://sketchfab.com/models/541501230e4544468704851384d54e0f/embed?autospin=0.2" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+					</div>
+				</div>
+				<div class="container3D-container">
+					<div class="c3d-gallerie-1">
+						<div class="voxel-img">
+							<img src="img/voxel_1.jpg">
+						</div>
+						<div class="voxel-img">
+							<img src="img/voxel_2.jpg">
+						</div>
+						<div class="voxel-img">
+							<img src="img/voxel_3.jpg">
+						</div>
+						<div class="voxel-img">
+							<img src="img/voxel_4.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 		<section class="section" id="web">
-			<div class="container section-c">
-				<h2 class="a-intro-titre">Section C</h2>
+			<div class="section-titre-separateur">
+				<div class="titre-separateur">
+					<h2 class="titre-texte">Web</h2>
+				</div>
+			</div>
+			<div class="container section-web-1">
+				<h2 class="a-intro-titre">Section Web</h2>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
 			</div>
 		</section>
@@ -143,6 +201,8 @@
 			</div>
 		</div>
 	</footer>
+<script src="js/autoExecutante.js"></script>
+<script src="js/modal.js"></script>
 </body>
-<script src="js/scripts.js"></script>
+
 </html>

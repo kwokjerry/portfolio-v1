@@ -144,13 +144,6 @@ body{
     text-align:center;
 }
 
-.container{
-    max-width:100%;
-    padding-left:1rem;
-    padding-right:1rem;
-    margin:auto;
-}
-
 .video-background{
     position:absolute;
     top:0;
@@ -195,10 +188,47 @@ body{
     height: 2px;
 }
 
+/*=========================================
+=================Section Contenu==========
+===========================================*/
+.section-titre-separateur{
+    height: 15px;
+    background-color: black;
+    background-size: auto 15px;
+    position: relative; 
+}
+
+.titre-separateur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    background-color: #670e0e;
+    text-align: center;
+}
+
+.titre-texte{
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    //padding: 0.5em;
+    letter-spacing: 2px;
+    border: 1px solid #4f4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.containerIntro{
+    max-width:100%;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+/*****************INTRO********************/
 .intro-section-a{
     display: flex;
     flex-direction: column;
-    padding: 1.5em 0em;
+    padding: 5em 0em 0em 0em;
     text-align: left;
 }
 
@@ -208,7 +238,7 @@ body{
 
 .a-intro-titre{
     position: relative;
-    background: linear-gradient(#ffe98d, #e19f27);
+    background: linear-gradient(#ea745c, #FF5722);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -216,23 +246,55 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 5px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
 }
 
-iframe{
-    top: 0;
+.c3D-titre{
+    position: relative;
+    background: linear-gradient(#ea745c, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-family: 'Righteous', cursive;
+}
+
+.a-intro-titre::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    height: 1px;
+    background: linear-gradient(to right, #7d491e 0%, #7d411e 60%, rgba(125, 100, 30, 0) 100%);
+}
+
+.a-intro-deux{
+    margin: 0 auto;
+}
+
+#videoTrailer{
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 500px;
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4f4b4b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .intro-section-b{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em 0em;
+    padding: 3em 0em 7em 0em;
 }
 
 .sec-boite{
@@ -241,11 +303,125 @@ iframe{
     margin: 2em 0em;
 }
 
-.section-b{
-    height: 91vh;
+/*****************SECTION GLOBAL********************/
+.containerJeux{
+    max-width:100%;
+    padding: 0em 1em 0em 1em;
+    text-align:center;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #693a2f;
+    border-bottom: 2px solid #1a0e0b;
+    box-shadow: inset 0px 1px 0px 0px #1a0e0b;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.containerJeux-section{
+    display: flex;
+    flex-direction: row;
+    padding: 10em 0em;
+    align-items: center;
+}
+
+.containerJeux-sec-gauche{
+    justify-content: flex-start;
+}
+
+.containerJeux-sec-droite{
+    justify-content: flex-end;
+}
+
+.texte-section{
+    border: 1px solid red;
+    box-sizing: border-box;
+    /*flex-basis: 100%;
+    max-width: 100%;*/
+    padding: 0.6em;
+    line-height: 2;
+}
+
+.texte-gauche{
+    text-align: left;
 }
 
 
+.texte-droite{
+    text-align: right;
+}
+
+/*****************SECTION JEUX********************/
+
+.containerJeux-1{
+    background-color: #26303e;
+}
+
+.containerJeux-2{
+    background-color: #dd805c;
+}
+
+.containerJeux-3{
+    background-color:#26303e;
+}
+
+
+
+/*****************SECTION 3D********************/
+.container3D{
+    padding: 3em 1em 3em 1em;
+    background-color: #26303e;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.c3D-texte{
+    padding: 2em 0em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.sketchfab-embed-wrapper{
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+#sketchfab1{
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.c3d-gallerie-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.voxel-img{
+    padding: 0.1em 0em;
+}
+
+.voxel-img > img{
+    width:100%;
+}
+
+.voxel-img > img:hover{
+    cursor: pointer;
+}
+
+
+
+/*****************SECTION WEB********************/
 
 
 /*===============================================================================
@@ -272,6 +448,15 @@ iframe{
     width: 1px;
     height: 20px;
     background: #32372b;
+    vertical-align: middle;
+}
+
+.separateurMenu{
+    display: inline-block;
+    vertical-align: 25%;
+    width: 1px;
+    height: 15px;
+    background: #ffffff;
     vertical-align: middle;
 }
 
@@ -323,15 +508,28 @@ iframe{
     margin: 2%;
 }
 
-iframe{
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.intro-section-b{
+    flex-direction: row;
+    justify-content: center;
 }
 
+.sec-boite{
+    margin: 0em 2em;
+}
+
+#videoTrailer{
+    max-width: 700px;
+}
+
+.containerJeux{
+    font-size: 105%;
+    padding: 0em 7em 0em 7em;
+}
+
+.container3D{
+    font-size: 105%;
+    padding: 3em 7em 3em 7em;
+}
 
 }
 
@@ -366,49 +564,36 @@ iframe{
     display: none;
 }
 
-
-/*===========Fond video===========*/
+/*========================================
+  ============ FOND VIDEOS ==============
+  =======================================*/
 
 .desc{
     padding: 3em;
     mix-blend-mode: screen;
 }
 
-.container{
-    max-width:100%;
-    padding: 1em 17em 3em 17em;
-    margin:auto;
-    text-align:center;
-    font-size: 110%;
-}
 
-/*.video-background video{
-    width:100vw;
-    height:auto;
-}*/
 
-iframe{
-    width: 560px;
-    height: 315px;
-}
+/*=========================================
+=================Section Contenu==========
+===========================================*/
 
+
+/*****************INTRO********************/
 .intro-section-a{
     flex-direction: row;
-}
-
-.a-intro{
-    padding: 1em;
 }
 
 .a-intro-texte{
     line-height: 1.8em;
 }
 
-.a-intro-deux{
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+.a-intro{
+    flex-basis: 50%;
+    max-width: 50%;
 }
+
 
 .intro-section-b{
     flex-direction: row;
@@ -416,10 +601,41 @@ iframe{
 }
 
 .sec-boite{
-    margin: 0em 3em;
+    margin: 0em 4.5em;
 }
 
+/*****************SECTION GLOBAL********************/
+.texte-section{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 0.6em;
+}
 
+.containerIntro{
+    max-width:100%;
+    padding: 0em 12em;
+    margin:auto;
+    text-align:center;
+    font-size: 110%;
+}
+
+.containerJeux{
+    font-size: 110%;
+    padding: 0em 12em 0em 12em;
+}
+
+.container3D{
+    font-size: 110%;
+    padding: 5em 12em 5em 12em;
+}
+
+.c3d-gallerie-1{
+    flex-direction: row;
+}
+
+.voxel-img{
+    padding: 0.7em 0.1em;
+}
 
 .section-network{
     font-size: 1.4em;
