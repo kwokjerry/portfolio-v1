@@ -1,3 +1,31 @@
-@import "element/_element";
-@import "layout/_layout";
-@import "colors/_colors";
+/*!
+Theme Name: Portfolio
+Theme URI: https://github.com/kwokjerry
+Author: Jerry Kwok Hiu Fung
+Author URI: https://www.artstation.com/jerrykwok
+Description: Portfolio de jerry, un étudiant en multimédia.
+*/
+
+
+@import "variables-site/variables-site";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/global";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/galleries";
+

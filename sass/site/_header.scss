@@ -1,0 +1,147 @@
+//Le menu
+.menu {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    transition: 0.4s;
+    padding: 1em;
+    text-align: center;
+    z-index: 10;
+}
+
+.menu a {
+    text-align: center;
+    padding: 0em 3em;
+    text-decoration: none;
+    font-size: 1.3rem; 
+}
+
+.menu a:first-child {
+    padding: 0em 0.7em;
+}
+
+.btn_menu{
+    display: none;
+}
+
+.btn_menu_mobile{
+    height: 100vh;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(.42, 0, .49, 1.43);
+}
+
+.btn_menu_mobile a{
+    text-align: center;
+    padding: 2em 0em;
+    text-decoration: none;
+    font-size: 1.3rem; 
+}
+
+.logo_main{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Le logo
+.logo{
+    height: 70px;
+    transition: 0.4s;
+}
+
+//Le check bouton
+#chkBoutonBurger {
+    display: none;
+}
+
+.boutonBurger {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 6%;
+    float: right;
+}
+
+.ligne {
+    border-radius: 50%;
+    width: 100%;
+    height: 5px;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.separateurMenu{
+    display: inline-block;
+    vertical-align: 25%;
+    width: 1px;
+    height: 15px;
+    background: #ffffff;
+    vertical-align: middle;
+}
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:first-child {
+    transform: translateY(15px) rotate(45deg);
+}
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:nth-child(2) {
+    opacity: 0;
+}
+
+#chkBoutonBurger:checked~.boutonBurger>.ligne:last-child {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+
+/*========================================*/
+/*=============== TABLETTES ==============*/
+/*========================================*/
+@media screen and (min-width: 768px) {
+    .boutonBurger {
+        margin: 2%;
+    }
+    
+}
+
+
+/*========================================*/
+/*================ DESKTOP ===============*/
+/*========================================*/
+@media screen and (min-width: 1200px) {
+    .menu {
+        flex: 0 0 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .menu a {
+        transform: translateX(0%);
+        flex: 1 0 auto;
+    }
+    
+    .btn_menu{
+        padding: 1.2em;
+        display: block;
+    }
+    
+    .btn_menu_mobile{
+        display: none;
+    }
+    
+    .boutonBurger {
+        display: none;
+    }
+}

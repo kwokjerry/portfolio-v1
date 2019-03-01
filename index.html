@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
+	<script src="js/modal.js"></script>
 	<title>Jerry Kwok Hiu Fung</title>
 
 </head>
@@ -55,7 +56,7 @@
 		<a href="#web">WEB</a>
 	</span>
 
-	<div class="global">
+	<div class="global" id="global">
 		<div class="v-header container-all">
 			<div class="video-background">
 				<video autoplay muted loop>
@@ -143,19 +144,24 @@
 					</div>
 				</div>
 				<div class="container3D-container">
+					<div id="myModalImg" class="modal" >
+						<span class="close">&times;</span>
+						<img class="modal-content" id="image">
+					</div>
+
 					<div class="c3d-gallerie-1">
-						<div class="voxel-img">
-							<img src="img/voxel_1.jpg">
-						</div>
-						<div class="voxel-img">
-							<img src="img/voxel_2.jpg">
-						</div>
-						<div class="voxel-img">
-							<img src="img/voxel_3.jpg">
-						</div>
-						<div class="voxel-img">
-							<img src="img/voxel_4.jpg">
-						</div>
+						<span class="voxel-img">
+							<img class="modalImage modalVoxel" src="img/gallery/voxel_1.jpg">
+						</span>
+						<span class="voxel-img">
+							<img class="modalImage modalVoxel" src="img/gallery/voxel_2.jpg">
+						</span>
+						<span class="voxel-img">
+							<img class="modalImage modalVoxel" src="img/gallery/voxel_3.jpg">
+						</span>
+						<span class="voxel-img">
+							<img class="modalImage modalVoxel" src="img/gallery/voxel_4.jpg">
+						</span>
 					</div>
 				</div>
 			</div>
@@ -201,8 +207,8 @@
 			</div>
 		</div>
 	</footer>
+
 <script src="js/autoExecutante.js"></script>
-<script src="js/modal.js"></script>
 </body>
 
 </html>

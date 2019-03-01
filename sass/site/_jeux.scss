@@ -1,0 +1,73 @@
+.containerJeux-1{
+    background-color: #26303e;
+}
+
+.containerJeux-2{
+    background-color: #dd805c;
+}
+
+.containerJeux-3{
+    background-color:#26303e;
+}
+
+.containerJeux{
+    max-width:100%;
+    padding: 0em 1em 0em 1em;
+    text-align:center;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #693a2f;
+    border-bottom: 2px solid #1a0e0b;
+    box-shadow: inset 0px 1px 0px 0px #1a0e0b;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.containerJeux-section{
+    display: flex;
+    flex-direction: row;
+    padding: 10em 0em;
+    align-items: center;
+}
+
+.containerJeux-sec-gauche{
+    justify-content: flex-start;
+}
+
+.containerJeux-sec-droite{
+    justify-content: flex-end;
+}
+
+.texte-section{
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 0.6em;
+    line-height: 2;
+}
+
+.texte-gauche{
+    text-align: left;
+}
+
+
+.texte-droite{
+    text-align: right;
+}
+
+
+@media screen and (min-width: 768px) {
+    .containerJeux{
+        font-size: 105%;
+        padding: 0em 7em 0em 7em;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .containerJeux{
+        font-size: 110%;
+        padding: 0em 12em 0em 12em;
+    }
+}

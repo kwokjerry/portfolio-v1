@@ -7,8 +7,13 @@ var logo = document.getElementById("logo");
 var btnMenuBurger = document.getElementById("chkBoutonBurger");
 var btnMenuMobile = document.getElementById("btnMenuMobile");
 
-//var btnMenuBurger = document.getElementById("chkBoutonBurger");
-//var btnMenuMobile = document.getElementById("btnMenuMobile");
+var global = document.getElementById("global");
+var modalImage = document.getElementsByClassName("modalImage");
+var spanImg = document.getElementsByClassName("close");
+
+var modalImg = document.getElementById('myModalImg');
+
+var modalVoxel= document.getElementsByClassName("modalVoxel");
 
 /*
  *===================================================
@@ -44,6 +49,22 @@ function activeMenuBurger(){
     btnMenuMobile.style.transform = 'translateX(' + 100 + '%)';
   }
 
+}
+
+
+/*
+ *===================================================
+ * Le modal d'image =================================
+ *===================================================
+*/
+if(document.body.contains(global)){
+  var i = 0;
+
+  for(i; i<modalImage.length; i++){
+    modalImage[i].addEventListener("click", afficherModal);
+  }
+
+  spanImg[0].addEventListener("click", fermeSpanImg);
 }
 
 })();

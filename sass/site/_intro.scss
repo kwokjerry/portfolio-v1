@@ -1,0 +1,140 @@
+.intro-section-a{
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0em 0em 0em;
+    text-align: left;
+}
+
+.a-intro{
+    padding: 1em;
+}
+
+.a-intro-titre{
+    position: relative;
+    background: linear-gradient(#ea745c, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-family: $font__titre;
+}
+
+.c3D-titre{
+    position: relative;
+    background: linear-gradient(#ea745c, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-family: $font__titre;
+}
+
+.a-intro-titre::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(to right, #7d491e 0%, #7d411e 60%, rgba(125, 100, 30, 0) 100%);
+}
+
+.a-intro-deux{
+    margin: 0 auto;
+}
+
+#videoTrailer{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4f4b4b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.intro-section-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0em 7em 0em;
+}
+
+.sec-boite{
+    border: 1px solid black;
+    padding: 2em;
+    margin: 2em 0em;
+}
+
+.containerIntro{
+    max-width:100%;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+
+
+/*========================================*/
+/*=============== TABLETTES ==============*/
+/*========================================*/
+@media screen and (min-width: 768px) {
+    .intro-section-b{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .sec-boite{
+        margin: 0em 2em;
+    }
+    
+    #videoTrailer{
+        max-width: 700px;
+    }
+}
+
+/*========================================*/
+/*================ DESKTOP ===============*/
+/*========================================*/
+@media screen and (min-width: 1200px) {
+    .containerIntro{
+        max-width:100%;
+        padding: 0em 12em;
+        margin:auto;
+        text-align:center;
+        font-size: 110%;
+    }
+
+    .intro-section-a{
+        flex-direction: row;
+    }
+    
+    .a-intro-texte{
+        line-height: 1.8em;
+    }
+    
+    .a-intro{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    
+    .intro-section-b{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .sec-boite{
+        margin: 0em 4.5em;
+    }
+    
+}

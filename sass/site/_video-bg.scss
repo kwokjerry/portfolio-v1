@@ -1,0 +1,79 @@
+.desc{
+    padding: 1.5em;
+}
+
+.v-header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.container-all{
+    padding-left:auto;
+    padding-right:auto;
+    margin:auto;
+    text-align:center;
+}
+
+.video-background:before{
+    z-index: 2;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    top: 0;
+    left: 0;
+}
+
+.video-background{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.video-background video{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.header-content-container{
+    z-index: 5;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content h1{
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content p{
+    font-size: 1.5em;
+}
+
+.bar-entre{
+    margin: 10px 0;
+    height: 2px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .desc{
+        padding: 3em;
+        mix-blend-mode: screen;
+    }
+}

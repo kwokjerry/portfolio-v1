@@ -1,0 +1,67 @@
+/* Reset... */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $font__main;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    overflow-x:hidden;
+}
+
+
+.section-titre-separateur{
+    height: 15px;
+    background-color: black;
+    background-size: auto 15px;
+    position: relative; 
+}
+
+.titre-separateur{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    background-color: #670e0e;
+    text-align: center;
+}
+
+.titre-texte{
+    font-family: $font__titre;
+    font-size: 40px;
+    letter-spacing: 2px;
+    border: 1px solid #4f4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/*========================================*/
+/*=============== TABLETTES ==============*/
+/*========================================*/
+@media screen and (min-width: 768px) {
+
+}
+
+/*========================================*/
+/*================ DESKTOP ===============*/
+/*========================================*/
+@media screen and (min-width: 1200px) {
+    .texte-section{
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0.6em;
+    }
+
+}
+
