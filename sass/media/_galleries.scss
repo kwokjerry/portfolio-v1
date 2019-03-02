@@ -1,16 +1,30 @@
 //Container de gallerie 1 - voxel
 .c3d-gallerie-1{
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    display: grid;
+    grid-gap: 0.05em;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+.gallerie-voxel{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallerie-aich{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallerie-oreps{
+    grid-template-columns: repeat(2, 1fr);
+}
+
 //Div - L'image de voxel
 .voxel-img{
-    padding: 0.1em 0em;
+    padding: 0.1em 0.2em;
 }
 
 //L'image de voxel
@@ -30,7 +44,6 @@
     display: none;
     position: fixed;
     z-index: 15;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -40,13 +53,14 @@
 }
   
 .modal-content {
-    margin: auto;
     display: block;
     width: 100%;
     max-width: 100%;
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
     border: 0;
     border-radius: .125rem;
+    display: block;
+    margin: 0 auto;
 }
   
 .modal-content {  
@@ -92,9 +106,17 @@
         flex-direction: row;
     }
 
+    .gallerie-voxel{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .gallerie-oreps{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     //Div - L'image de voxel
     .voxel-img{
-        padding: 0.7em 0.1em;
+        padding: 0.2em 0.3em;
     }
 
     .modal-content {
