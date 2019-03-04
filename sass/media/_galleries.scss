@@ -23,18 +23,18 @@
 }
 
 //Div - L'image de voxel
-.voxel-img{
+.span-img{
     padding: 0.1em 0.2em;
 }
 
 //L'image de voxel
-.voxel-img > img{
+.span-img > img{
     width:100%;
     clip-path: polygon(2% 0, 100% 0, 100% 95%, 98% 100%, 0 100%, 0 5%);
 }
 
 //L'image de voxel : HOVER
-.voxel-img > img:hover{
+.span-img > img:hover{
     cursor: pointer;
 }
 
@@ -44,7 +44,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 1500;
     top: 0;
     right: 0;
     bottom: 0;
@@ -94,6 +94,7 @@
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+    z-index: 2000;
 }
   
 .close:hover,
@@ -128,12 +129,12 @@
     }
 
     //Div - L'image de voxel
-    .voxel-img{
+    .span-img{
         padding: 0.2em 0.3em;
     }
 
     .modal-content {
-        width: 80%;
+        width: 60%;
         max-width: 80%;
         margin-top: 2.5em;
     }

@@ -61,6 +61,20 @@
     transition: 0.4s;
 }
 
+.audio{
+    display: block;  
+    padding: 1em;
+    position: absolute;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #4f4b4b;
+    cursor: pointer;
+}
+
+#audio > i:last-child{
+    display: none;  
+}
+
 //Le check bouton
 #chkBoutonBurger {
     display: none;
@@ -148,6 +162,12 @@
     .btn_menu{
         padding: 1.2em;
         display: block;
+    }
+
+    .audio{
+        left: initial;
+        right: 0;
+        margin: 0.3em;
     }
     
     .btn_menu_mobile{
