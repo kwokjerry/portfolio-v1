@@ -21,9 +21,10 @@ body{
 
 .section-titre-separateur{
     height: 15px;
-    background-color: black;
     background-size: auto 15px;
     position: relative; 
+    background: #160e11 url(../img/separateur.png) 50% 50% repeat-x;
+    background-size: auto 15px;
 }
 
 .titre-separateur{
@@ -33,18 +34,18 @@ body{
     z-index: 2;
     transform: translate(-50%, -50%);
     width: 360px;
-    background-color: #670e0e;
+    height: 57px;
+    background: url(../img/separateur_titre.png) 50% 50% no-repeat;
+    background-size: contain;
     text-align: center;
+    
 }
 
 .titre-texte{
     font-family: $font__titre;
     font-size: 40px;
     letter-spacing: 2px;
-    border: 1px solid #4f4b4b;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-
 
 /*========================================*/
 /*=============== TABLETTES ==============*/

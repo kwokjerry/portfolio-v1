@@ -10,13 +10,12 @@ function fermeSpanImg(event) {
 	var modalImg = document.getElementById('myModalImg');
     modalImg.style.display = "none";
 }
-/*
+
 //Fermer en cliquant partout
 function fermerModalImgClique(event){
 	var modalImg = document.getElementById('myModalImg');
-	var modalTxt = document.getElementsByClassName('modalTxtClass');
 
 	if (event.target == modalImg) {
         modalImg.style.display = "none";
     }
-}*/
+}

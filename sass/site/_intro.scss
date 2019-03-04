@@ -38,7 +38,7 @@
     font-family: $font__titre;
 }
 
-.a-intro-titre::after {
+.texte-gauche .a-intro-titre::after {
     content: "";
     display: block;
     position: absolute;
@@ -46,7 +46,20 @@
     right: 0;
     bottom: 0;
     height: 1px;
-    background: linear-gradient(to right, #7d491e 0%, #7d411e 60%, rgba(125, 100, 30, 0) 100%);
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #9e4d0a 0%, #e48f5f 60%, rgba(125, 100, 30, 0) 100%);
+}
+
+.texte-droite .a-intro-titre::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    margin-bottom: 5px;
+    background: linear-gradient(to left, #9e4d0a 0%, #e48f5f 60%, rgba(125, 100, 30, 0) 100%);
 }
 
 .a-intro-deux{
@@ -63,7 +76,6 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-
 .intro-section-b{
     display: flex;
     flex-direction: column;
@@ -72,9 +84,20 @@
 }
 
 .sec-boite{
-    border: 1px solid black;
-    padding: 2em;
-    margin: 2em 0em;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 250px;
+    padding: 1.5em 1.2em;
+}
+
+.intro-boite-image{
+    position: relative;
+    display: inline-block;
+    width: 211px;
+    height: 180px;
+    background: url(../img/boite.png) 0 0 no-repeat;
+    background-size: auto 180px;
 }
 
 .containerIntro{
@@ -83,6 +106,20 @@
     padding-right:1rem;
     background: #26303e url(../img/bg/intro.png) no-repeat center;
     background-size: cover;
+}
+
+.intro-boite-image > i{
+    position: absolute;
+    left: 36%;
+    top: 36%;
+    font-size: 3em;
+    color: #c3dbea;;
+    transition: 0.5s;
+}
+
+.intro-boite-image > i:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
 }
 
 
@@ -97,9 +134,9 @@
     }
     
     .sec-boite{
-        margin: 0em 2em;
+        margin: 0em 0.5em;
     }
-    
+
     #videoTrailer{
         max-width: 700px;
     }
@@ -134,9 +171,22 @@
         flex-direction: row;
         justify-content: center;
     }
-    
+
+    .intro-section-b::after{   
+        position: absolute;
+        top: 37%;
+        width: 100%;
+        height: 1px;
+        background: #715e2b;
+    }
+
+    .intro-boite-image > i{
+        left: 0;
+        right: 0;
+    }
+
     .sec-boite{
-        margin: 0em 4.5em;
+        margin: 0em 2em;
     }
     
 }

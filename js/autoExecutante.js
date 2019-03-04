@@ -65,6 +65,7 @@ if(document.body.contains(global)){
   }
 
   spanImg[0].addEventListener("click", fermeSpanImg);
+  modalImg.addEventListener("click", fermerModalImgClique);
 }
 
 })();
