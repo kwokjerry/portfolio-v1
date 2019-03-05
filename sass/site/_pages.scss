@@ -104,11 +104,17 @@
     width: 100%;
     opacity: 1;
     transition: .5s ease;
-    background-color: #e35d34ec;
+    background-color: #e35d346b;;
+}
+
+.lien-overlay:hover~.web-lien-text{
+    font-size: 200%;
+    opacity: 1;
+    color: red;
 }
 
 .lien-boite-web:hover .lien-overlay {
-    opacity: 0.1;
+    opacity: 0.2;
 }
   
 .web-lien-text {
@@ -245,7 +251,7 @@
 .art-img{
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 } 
 
 .captionArt{
@@ -258,7 +264,9 @@
 
 
 @media screen and (min-width: 768px) {
-
+    .art-img{
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
 
 
@@ -307,6 +315,8 @@
         padding: 2em 5em 5em 5em;
     }
 
-    
+    .art-img{
+        grid-template-columns: repeat(3, 1fr);
+    } 
 
 }

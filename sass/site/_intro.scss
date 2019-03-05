@@ -20,7 +20,7 @@
     text-transform: uppercase;
     padding-bottom: 5px;
     letter-spacing: 3px;
-    font-family: $font__titre;
+    font-family: $font__titre2;
 }
 
 .c3D-titre{
@@ -35,7 +35,7 @@
     text-transform: uppercase;
     padding-bottom: 5px;
     letter-spacing: 3px;
-    font-family: $font__titre;
+    font-family: $font__titre2;
 }
 
 .texte-gauche .a-intro-titre::after {
@@ -89,6 +89,7 @@
     display: inline-block;
     width: 250px;
     padding: 1.5em 1.2em;
+    text-decoration: none;
 }
 
 .intro-boite-image{
@@ -98,6 +99,7 @@
     height: 180px;
     background: url(../img/boite.png) 0 0 no-repeat;
     background-size: auto 180px;
+    margin-bottom: 1em;
 }
 
 .containerIntro{
@@ -106,6 +108,31 @@
     padding-right:1rem;
     background: #26303e url(../img/bg/intro.png) no-repeat center;
     background-size: cover;
+}
+
+.intro-texte-boite{
+    font-size: 150%;
+    color: #c3dbea;
+    margin: 2em 0em;
+    font-family: $font__titre;
+    padding: 0em 0em;
+    transition: 0.3s;
+}
+
+.intro-boite-image:hover~.intro-texte-boite{
+    padding: 0.5em 1em;
+    border-right: 2px solid #c3dbea;
+    border-left: 2px solid #c3dbea;
+    background: #a03f22;
+    transition: 0.3s;
+}
+
+.intro-texte-boite:hover{
+    padding: 0.5em 1em;
+    border-right: 2px solid #c3dbea;
+    border-left: 2px solid #c3dbea;
+    background: #a03f22;
+    transition: 0.3s;
 }
 
 .intro-boite-image > i{
