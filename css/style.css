@@ -1277,7 +1277,7 @@ th {
   font-family: "Righteous", cursive;
 }
 
-.containerPageVideo-content, .containerPageArt-content {
+.containerPageWeb-content, .containerPageVideo-content, .containerPageArt-content {
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -webkit-animation-duration: 0.5s;
