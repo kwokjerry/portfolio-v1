@@ -50,6 +50,31 @@
     width: 100%;
 }
 
+.synopsis-c{
+    padding: 3em 1em 3em 1em;
+    background: #26303e url(../img/bg/footer.png) no-repeat center;
+    background-size: cover;
+}
+
+.synopsis-c > h3{
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ea745c), to(#FF5722));
+    background: linear-gradient(#ea745c, #FF5722);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    font-family: $font__titre2;
+}
+
+.synopsis-c > p{
+    line-height: 2;
+}
+
 @media screen and (min-width: 768px) {
     .container3D{
         font-size: 105%;
@@ -61,6 +86,10 @@
 @media screen and (min-width: 1200px) {
     .container3D{
         font-size: 110%;
+        padding: 5em 12em 5em 12em;
+    }
+
+    .synopsis-c{
         padding: 5em 12em 5em 12em;
     }
 }

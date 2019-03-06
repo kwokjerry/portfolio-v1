@@ -148,6 +148,10 @@
     transition: 0.5s;
 }
 
+.a-intro-texte{
+    line-height: 2.1em;
+}
+
 
 /*========================================*/
 /*=============== TABLETTES ==============*/
@@ -163,7 +167,7 @@
     }
 
     #videoTrailer{
-        max-width: 500px;
+        max-width: 550px;
     }
 }
 
@@ -181,10 +185,6 @@
 
     .intro-section-a{
         flex-direction: row;
-    }
-    
-    .a-intro-texte{
-        line-height: 1.8em;
     }
     
     .a-intro{
