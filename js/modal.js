@@ -63,6 +63,23 @@ function fermeSpanPageArt(event) {
     menu.style.display = "flex";
 }
 
+/*====================Footer================*/
+function afficherModalPageFooter(event) {
+    var modalFooter = document.getElementById('modalFooter');
+    var menu = document.getElementById("menu");
+
+    modalFooter.style.display = "block";
+    menu.style.display = "none";
+}
+
+function fermeSpanPageFooter(event) {
+    var modalFooter = document.getElementById('modalFooter');
+    var menu = document.getElementById("menu");
+
+    modalFooter.style.display = "none";
+    menu.style.display = "flex";
+}
+
 
 
 //Fermer en cliquant partout
@@ -71,5 +88,13 @@ function fermerModalClique(event){
 
 	if (event.target == modalImg) {
         modalImg.style.display = "none";
+    }
+}
+
+function fermerModalClique1(event){
+    var modalFooter = document.getElementById('modalFooter');
+
+	if (event.target == modalFooter) {
+        modalFooter.style.display = "none";
     }
 }

@@ -407,6 +407,10 @@ th {
   display: none;
 }
 
+.fa-circle {
+  color: #e35d34;
+}
+
 .btn_menu_mobile {
   height: 100vh;
   display: -webkit-box;
@@ -431,6 +435,7 @@ th {
   transition: -webkit-transform 0.5s cubic-bezier(0.42, 0, 0.49, 1.43);
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.49, 1.43);
   transition: transform 0.5s cubic-bezier(0.42, 0, 0.49, 1.43), -webkit-transform 0.5s cubic-bezier(0.42, 0, 0.49, 1.43);
+  font-family: "Righteous", cursive;
 }
 
 .btn_menu_mobile a {
@@ -581,7 +586,12 @@ th {
   }
   .btn_menu {
     padding: 1.2em;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .audio {
     left: initial;
@@ -819,15 +829,14 @@ th {
 .intro-texte-boite {
   font-size: 150%;
   color: #c3dbea;
-  margin: 2em 0em;
   font-family: "Righteous", cursive;
-  padding: 0em 0em;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-align: center;
 }
 
 .intro-boite-image:hover ~ .intro-texte-boite {
-  padding: 0.5em 1em;
+  padding: 0em 0.1em;
   border-right: 2px solid #c3dbea;
   border-left: 2px solid #c3dbea;
   background: #a03f22;
@@ -836,7 +845,7 @@ th {
 }
 
 .intro-texte-boite:hover {
-  padding: 0.5em 1em;
+  padding: 0em 0.1em;
   border-right: 2px solid #c3dbea;
   border-left: 2px solid #c3dbea;
   background: #a03f22;
@@ -878,7 +887,7 @@ th {
     margin: 0em 0.5em;
   }
   #videoTrailer {
-    max-width: 700px;
+    max-width: 500px;
   }
 }
 
@@ -1305,7 +1314,7 @@ th {
   padding-top: 70px;
   letter-spacing: 3px;
   text-align: center;
-  font-family: "Righteous", cursive;
+  font-family: "Palanquin Dark", sans-serif;
 }
 
 .containerPageWeb-content, .containerPageVideo-content, .containerPageArt-content {
@@ -1777,6 +1786,12 @@ th {
           flex-direction: column;
   text-align: center;
   margin-top: 5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footerbox-right > a {
@@ -1833,6 +1848,94 @@ th {
     text-align: left;
     margin-top: 0em;
   }
+}
+
+/*--------------------------------------------------------------
+## Informations
+--------------------------------------------------------------*/
+.containerModalFooter {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(49, 49, 49, 0.72);
+  overflow: -moz-scrollbars-none;
+}
+
+.containerModalFooter::-webkit-scrollbar {
+  display: none;
+}
+
+.containerModalFooter-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  display: block;
+  border-radius: .125rem;
+  margin: 0 auto;
+  padding: 1.5em;
+  background: #26303e url(../img/bg/footer.png) no-repeat center;
+  background-size: cover;
+  border: 1px solid #4f4b4b;
+  width: 100%;
+}
+
+.infoBtn {
+  cursor: pointer;
+}
+
+.modalF-box-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalF-box-1 > a {
+  color: #e35d34;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modalF-box-1 > a:hover {
+  color: #f1b6a3;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modalF-box-2 > span {
+  padding: 0.5em 0em;
 }
 
 /*--------------------------------------------------------------

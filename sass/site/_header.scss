@@ -28,6 +28,10 @@
     display: none;
 }
 
+.fa-circle{
+    color: #e35d34; 
+}
+
 .btn_menu_mobile{
     height: 100vh;
     display: flex;
@@ -39,6 +43,7 @@
     z-index: 99;
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(.42, 0, .49, 1.43);
+    font-family: $font__titre;
 }
 
 .btn_menu_mobile a{
@@ -162,7 +167,8 @@
     
     .btn_menu{
         padding: 1.2em;
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .audio{

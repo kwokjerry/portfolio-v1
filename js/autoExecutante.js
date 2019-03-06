@@ -19,13 +19,12 @@ var spanImg = document.getElementsByClassName("close");
 var modalImg = document.getElementById('myModalImg');
 
 var btnWeb = document.getElementById("btnWeb");
-var modalPageWeb = document.getElementById('modalWeb');
-
 var btnVideo = document.getElementById("btnVideo");
-var modalPageVideo = document.getElementById('modalVideo');
-
 var btnArt = document.getElementById("btnArt");
-var modalPageArt = document.getElementById('modalArt');
+var btnFooter = document.getElementById("btnFooter");
+var btnFooter1 = document.getElementById("btnFooter1");
+
+var modalFooter = document.getElementById('modalFooter');
 
 
 /*
@@ -137,6 +136,18 @@ if(document.body.contains(global)){
 if(document.body.contains(global)){
     btnArt.addEventListener("click", afficherModalPageArt);
     spanImg[3].addEventListener("click", fermeSpanPageArt);
+}
+
+/*
+ *===================================================
+ * Le modal de la page art ========================
+ *===================================================
+*/
+if(document.body.contains(global)){
+    btnFooter.addEventListener("click", afficherModalPageFooter);
+    btnFooter1.addEventListener("click", afficherModalPageFooter);
+    spanImg[4].addEventListener("click", fermeSpanPageFooter);
+    modalFooter.addEventListener("click", fermerModalClique1);
 }
 
 })();

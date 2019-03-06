@@ -113,14 +113,13 @@
 .intro-texte-boite{
     font-size: 150%;
     color: #c3dbea;
-    margin: 2em 0em;
     font-family: $font__titre;
-    padding: 0em 0em;
     transition: 0.3s;
+    text-align: center;
 }
 
 .intro-boite-image:hover~.intro-texte-boite{
-    padding: 0.5em 1em;
+    padding: 0em 0.1em;
     border-right: 2px solid #c3dbea;
     border-left: 2px solid #c3dbea;
     background: #a03f22;
@@ -128,7 +127,7 @@
 }
 
 .intro-texte-boite:hover{
-    padding: 0.5em 1em;
+    padding: 0em 0.1em;
     border-right: 2px solid #c3dbea;
     border-left: 2px solid #c3dbea;
     background: #a03f22;
@@ -164,7 +163,7 @@
     }
 
     #videoTrailer{
-        max-width: 700px;
+        max-width: 500px;
     }
 }
 

@@ -29,8 +29,7 @@
 		</span>
 
 		<span class="btn_menu">
-			<a href="#"><i class="fas fa-home"></i></a>
-			<span class="separateurMenu"></span>
+			<a href="#"><i class="fas fa-circle"></i></a>
 			<a href="#jeux">JEUX</a>
 			<span class="separateurMenu"></span>
 			<a href="#3d">3D</a>
@@ -54,7 +53,7 @@
 	</nav>
 
 	<span class="btn_menu_mobile" id="btnMenuMobile">
-		<a href="#"><i class="fas fa-home"></i></a>
+		<a href="#"><i class="fas fa-circle"></i></a>
 		<a href="#jeux">JEUX</a>
 		<a href="#3d">3D</a>
 		<a href="#divers">DIVERS</a>
@@ -63,8 +62,8 @@
 	<div class="global" id="global">
 
 		<audio id="myAudio" autoplay="autoplay" loop="loop">
-			<source src="audio/musique.mp3" type="audio/mpeg">
-			<source src="audio/musique.ogg" type="audio/ogg">
+			<source src="audio/audio.mp3" type="audio/mpeg">
+			<source src="audio/audio.ogg" type="audio/ogg">
 		</audio>
 
 		<div class="v-header container-all">
@@ -97,15 +96,15 @@
 				<div class="intro-section-b">	
 					<a href="#jeux" class="sec-boite">
 						<span class="intro-boite-image"><i class="fas fa-gamepad"></i></span>
-						<span class="intro-texte-boite">Jeux</span>
+						<p class="intro-texte-boite">Jeux</p>
 					</a>
 					<a href="#3d" class="sec-boite">
 						<span class="intro-boite-image"><i class="fas fa-cube"></i></span>
-						<span class="intro-texte-boite">3D</span>
+						<p class="intro-texte-boite">3D</p>
 					</a>
 					<a href="#divers" class="sec-boite">
 						<span class="intro-boite-image"><i class="fas fa-infinity"></i></span>
-						<span class="intro-texte-boite">Divers</span>
+						<p class="intro-texte-boite">Divers</p>
 					</a>
 				</div>
 			</div>
@@ -130,6 +129,7 @@
 					<div class="texte-section texte-droite">
 						<h2 class="a-intro-titre">Zero</h2>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+						<span>Automne 2018</span>
 					</div>
 				</div>
 			</div>
@@ -138,6 +138,7 @@
 					<div class="texte-section texte-gauche">
 						<h2 class="a-intro-titre">Mission:F</h2>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+						<span></span>Hiver 2018</span>
 					</div>
 				</div>
 			</div>
@@ -376,6 +377,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<footer class="footer-container">
@@ -394,19 +396,33 @@
 			<div class="footerbox-left">
 				<img class="logojerry" src="img/logo_jerry.png" alt="Jerry">
 			</div>
-			<div class="footerbox-left">
-				<img class="tim" src="img/tim.png" alt="TIM">
-			</div>
+
 			<div class="footerbox-right">
-				<a href="https://www.artstation.com/jerrykwok" class="infoBtn">À PROPOS</a>
+				<a id="btnFooter" class="infoBtn">ME CONTACTER</a>
 				<span class="separateur-footer"></span>
-				<a href="https://www.artstation.com/jerrykwok" class="infoBtn">ME CONTACTEZ</a>
-				<span class="separateur-footer"></span>
-				<a href="https://github.com/kwokjerry" class="infoBtn">PARCOURS</a>
+				<a id="btnFooter1" class="infoBtn">PARCOURS</a>
 			</div>
 		</div>
 		<div class="copyright">
 			<p>©2019 JERRY KWOK HIU FUNG PORTFOLIO, ALL RIGHTS RESERVED.</p>
+		</div>
+
+		<div id="modalFooter" class="containerModalFooter">
+			<span class="close">&times;</span>
+			<div class="containerModalFooter-content">
+				<h2 class="cPages-titre">ME CONTACTER</h2>
+				<div class="modalF-box-1">
+					<span>Mon email:</span>
+					<a href="mailto:kwokjerry7@gmail.com">kwokjerry7@gmail.com</a>
+				</div>
+				<h2 class="cPages-titre">PARCOURS</h2>
+				<div class="modalF-box-2">
+					<div>Collège de Maisonneuve</div>
+					<span>2016-2019</span>
+					<div>École secondaire Antoine-Brossard</div>
+					<span>2011-2016</span>
+				</div>
+			</div>
 		</div>
 	</footer>
 
