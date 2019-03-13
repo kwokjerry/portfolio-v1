@@ -75,6 +75,14 @@
     background: rgba(0, 0, 0, 0.7);
     border: 1px solid #4f4b4b;
     cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+#audio > i{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
 }
 
 #audio > i:last-child{
