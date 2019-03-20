@@ -23,6 +23,7 @@ var btnVideo = document.getElementById("btnVideo");
 var btnArt = document.getElementById("btnArt");
 var btnFooter = document.getElementById("btnFooter");
 var btnFooter1 = document.getElementById("btnFooter1");
+var btnFooter2 = document.getElementById("btnFooter2");
 
 var modalFooter = document.getElementById('modalFooter');
 
@@ -146,6 +147,7 @@ if(document.body.contains(global)){
 if(document.body.contains(global)){
     btnFooter.addEventListener("click", afficherModalPageFooter);
     btnFooter1.addEventListener("click", afficherModalPageFooter);
+    btnFooter2.addEventListener("click", afficherModalPageFooter);
     spanImg[4].addEventListener("click", fermeSpanPageFooter);
     modalFooter.addEventListener("click", fermerModalClique1);
 }

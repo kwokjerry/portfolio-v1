@@ -1939,7 +1939,6 @@ th {
   padding: 1em 1em;
   background: #26303e url(../img/bg/footer.png) no-repeat center;
   background-size: cover;
-  height: 100vh;
 }
 
 .div-modal-1 {
@@ -2069,6 +2068,102 @@ th {
   position: relative;
 }
 
+.div-modal-footer {
+  margin-bottom: 3em;
+}
+
+.div-competences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.div-competences-1, .div-competences-2 {
+  width: 80%;
+  margin: 1em;
+}
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  border: 1px solid #4f4b4b;
+}
+
+.side {
+  padding: 0.7em 0em 0.2em 0em;
+  text-align: left;
+}
+
+.bar {
+  text-align: right;
+  background-color: #fb5b2b;
+  padding: 0.3em;
+}
+
+.bar-container {
+  border-radius: 3px;
+}
+
+.bar-1 {
+  width: 90%;
+}
+
+.bar-2 {
+  width: 90%;
+}
+
+.bar-3 {
+  width: 80%;
+}
+
+.bar-4 {
+  width: 80%;
+}
+
+.bar-5 {
+  width: 70%;
+}
+
+.bar-6 {
+  width: 75%;
+}
+
+.bar-7 {
+  width: 90%;
+}
+
+.bar-8 {
+  width: 95%;
+}
+
+.bar-9 {
+  width: 90%;
+}
+
+.bar-10 {
+  width: 80%;
+}
+
+.bar-11 {
+  width: 90%;
+}
+
+.bar-12 {
+  width: 85%;
+}
+
 @media screen and (max-width: 600px) {
   .timeline::after {
     left: 31px;
@@ -2089,6 +2184,18 @@ th {
   }
   .right {
     left: 0%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .div-competences {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .div-competences-1, .div-competences-2 {
+    width: 35%;
   }
 }
 
