@@ -64,6 +64,18 @@
     text-align: right;
 }
 
+.btn-jeu > a{
+    text-decoration: none;
+    font-size: 200%;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-jeu > a:hover{
+    color: #e35d34;
+    transition: 0.5s;
+}
+
 @media screen and (min-width: 768px) {
     .containerJeux{
         font-size: 105%;
