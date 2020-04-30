@@ -9,4 +9,4 @@ Les fonctionnalités incluent:
 * Du codes javascripts, html et css
 * Des modèles 3D
 
-Copyright 2019 Jerry Kwok Hiu Fung
+Copyright 2019 Jerry Kwok
